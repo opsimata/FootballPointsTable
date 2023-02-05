@@ -11,10 +11,10 @@ function teamPoints() {
   return totalPoints;
 }
 
-var team = prompt("Informe o nome do time: \n");
-var victories = prompt("Informe o número de vitórias: \n");
-var draws = prompt("Informe o número de empates: \n");
-var defeats = prompt("Informe o número de derrotas: \n");
+// var team = prompt("Informe o nome do time: \n");
+// var victories = prompt("Informe o número de vitórias: \n");
+// var draws = prompt("Informe o número de empates: \n");
+// var defeats = prompt("Informe o número de derrotas: \n");
 
 function dataSheet() {
   var Obj = {
