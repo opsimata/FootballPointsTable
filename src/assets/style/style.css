@@ -6,6 +6,14 @@
     font-weight: bold;
 }
 
+.bg{
+    background-color: #000;
+    color: #FFF;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3rem;
+}
+
 .table-container {
     background-color: #383838;
     box-shadow: 1px 1px 5px 1px #3c3c3c;
@@ -37,7 +45,6 @@
 .team-column{
     text-align: left;
     padding-left: 3rem;
-    font-weight: normal;
 }
 .row-list-light{
     background-color: #6a6a6a;
