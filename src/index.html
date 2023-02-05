@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<title>TABLE | Championship </title>
+</head>
+
+<body class="body-style">
+
+	<div class="table-container">
+		<table class="table-style">
+			<tr>
+				<th colspan="5" class="title-style">TABELA | Campeonato Gaúcho 2023</th>
+			</tr>
+			<tr class="table-descriptions">
+				<th class="team-column-desc">Time</th>
+				<th>Pontos</th>
+				<th>Vitórias</th>
+				<th>Empates</th>
+				<th>Derrotas</th>
+			</tr>
+			<tr class="row-list-light">
+				<td class="team-column">Grêmio Football Porto-Alegrense</td>
+				<td>15</td>
+				<td>5</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-dark">
+				<td class="team-column">Sport Club Internacional</td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-light">
+				<td class="team-column">Esporte Clube São José</td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-dark">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-light">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-dark">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-light">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-dark">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-light">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-dark">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-light">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr class="row-list-dark">
+				<td class="team-column"></td>
+				<td>8</td>
+				<td>2</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+
+		</table>
+	</div>
+
+	<script>
+		function lineBreaker() {
+			document.write("<br>");
+		}
+		function print(printContent) {
+			document.write(printContent);
+			lineBreaker();
+		}
+
+		function calculateTotalPoints(teamVictories, teamDraws) {
+			var pointsVictory = 3, pointsDraw = 1;
+
+			return teamVictories * pointsVictory + (teamDraws * pointsDraw);
+		}
+
+		// print("Calculador de pontos do " + team + " na competição.");
+		// lineBreaker();
+		// lineBreaker();
+		// print("A quantidade de pontos somados na competição em caso de vitória é 3.");
+		// lineBreaker();
+		// print("A quantidade de pontos somados na competição em caso de empate é 1.");
+		// lineBreaker();
+		// lineBreaker();
+
+		var team = prompt("Informe o nome do time: \n");
+		var victories = prompt("Informe o número de vitórias: \n");
+		var draws = prompt("Informe o número de empates: \n");
+		var defeats = prompt("Informe o número de derrotas: \n");
+
+		var totalPointsTeam_1 = calculateTotalPoints(victories, draws);
+
+		var teamData_1 = {
+			name: team,
+			points: totalPointsTeam_1,
+			victories: victories,
+			draws: draws,
+			defeats: defeats
+		}
+
+		console.log(teamData_1);
+
+	</script>
+
+
+
+
+</body>
+
+</html>
